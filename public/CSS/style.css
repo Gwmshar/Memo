@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+.nav {
+    width: 100vw;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4e4ec0;
+}
+
+.navLogo {
+    font-size: 26px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLogo a {
+    color: #fff;
+}
+
+.navLinks {
+    width: 20%;
+}
+
+.navLinks ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4e4ec0;
+}
+
+.navLinks ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* posts */
+
+.home {
+    width: 100vw;
+    height: calc(100vh - 75px);
+    display: flex;
+}
+
+.left {
+    display: flex;
+    gap: 65px;
+    width: 20%;
+    height: 100%;
+    border: 1px solid black;
+    background-color: rgb(80, 80, 122);
+}
+
+.left ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.left ul li {
+    margin-top: 35px;
+}
+.left ul li a {
+    color: white;
+}
+
+.middle {
+    height: 100%;
+    width: 60%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.post {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.postContainer {
+    margin: 25px 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.post p {
+    font-size: 20px;
+}
+.post button {
+    width: 100px;
+    height: 40px;
+    border-radius: 20%;
+}
+.postCard {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.right {
+    width: 20%;
+    height: 100%;
+    border: 1px solid black;
+}
+.postCardContainer {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.postCardHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d5dff0;
+    height: 50px;
+}
+.postCardHeader a {
+    margin: 0 20px;
+}
+.postCardHeaderContainer {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    margin-left: 25px;
+}
+.postCardHeaderContainer img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.postCardHeaderContainer h3 {
+    margin-left: 10px;
+}
+.postCardBody {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 150px;
+}
+
+.postCardBodyContainer {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+}
+
+.postCardBodyText h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.postCardBodyContent p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.postCardFooter {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d5dff0;
+}
+.postCardFooterContainer {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.likes {
+    font-size: 20px;
+}
+.comment {
+    font-size: 20px;
+}
+
+.search {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchContainer {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchContainer input {
+    height: 45px;
+    width: 75%;
+}
+.searchContainer button {
+    height: 45px;
+    width: 23%;
+}
+.rightText {
+    width: 100%;
+    text-align: center;
+}
+.follow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.followContainer {
+    margin: 10px 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* create post */
+.createPost {
+    width: 100vw;
+    height: calc(100vh - 75px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.createPostContainer {
+    width: 70%;
+    height: 70%;
+}
+.createPost form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+}
+.createPost form input {
+    height: 50px;
+    width: 350px;
+}
+.createPost form label {
+    font-size: 24px;
+}
+.createPost form textarea {
+    height: 350px;
+    width: 350px;
+}
+.createPost form button {
+    margin-top: 25px;
+    height: 50px;
+    width: 100px;
+}
+
+.createPostTitle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.createPostDesc {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.auth {
+    height: calc(100vh - 75px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lot {
+    height: 70%;
+    width: 70%;
+}
+.lot form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.lot form h2 {
+    text-align: center;
+}
+.lot form input {
+    height: 50px;
+    width: 70%;
+    padding: 0 10px;
+}
+.lot form button {
+    height: 50px;
+    width: 100px;
+}
+.profile {
+    text-align: center;
+    margin-top: 25px;
+}
+.profile img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.profileDesc {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
